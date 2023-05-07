@@ -372,7 +372,7 @@
     .sv-services__wrapper{
       display: grid;
       grid-template-columns: auto;
-      padding: 10rem 5rem 5rem 5rem;
+      padding: 10rem 5rem 5rem 3.5rem;
     }
 
     .sv-services__item{
