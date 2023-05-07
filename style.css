@@ -180,7 +180,7 @@
    }
 
    .header .header__nav li:last-child a{
-    width: 18rem;
+    width: 15rem;
     text-align: center;
    }
 
@@ -262,6 +262,7 @@
   /*-------HELP BANNER--------*/
   .help-banner{
     background: #dadbf1;
+    position: relative;
   }
 
   .help-banner .help-banner__wrapper{
@@ -277,34 +278,67 @@
     margin-bottom: 3rem;
   }
 
-  .help-banner .help-banner__form{
+  .help-banner .help-banner__content{
     position: relative;
     align-items: center;
   }
 
-  .help-banner .help-banner__form .search-box{
+  .help-banner .help-banner__content .form #search:focus, .help-banner .help-banner__content .form #search:hover{
+    border-color:#4C5FD5 !important;
+    outline: none;
+  }
+
+  .help-banner .help-banner__content .form:hover + .arrow-svg{
+    fill:#4C5FD5 !important;
+  }
+
+  .help-banner .help-banner__content .form input{
+    border: 1px solid #000000;
     border-radius: .5rem;
     font-size: 2rem;
     padding: 2rem;
-    width: 60%;
+    width: 65%;
     height: 7rem;
     box-shadow: 0 9px 14px 0 rgba(0, 0, 0, 0.1);
   }
 
-  .help-banner .help-banner__form .search-box:hover{
+  .help-banner .help-banner__content .arrow-svg{
+    color: #000000;
+    position: absolute;
+    right: 22rem;
+    top: 15.4rem;
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .help-banner .help-banner__content .arrow-svg:hover{
+    fill: #4C5FD5 !important;
+  }
+
+  .help-banner .btn.violet{
+    position: fixed;
+    margin-top: 5rem;
+    margin-left: 120rem;
+    float: right;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f5f5f5;
+    background: #4C5FD5;
+    border: 1px solid #4C5FD5;
+    padding: .9rem 1.8rem;
+    align-items: center;
+  }
+
+  .help-banner .btn.violet:hover{
+    color: #ffffff;
+    background: #4C5FD5;
     border: 1px solid #4C5FD5;
   }
 
-  .help-banner .help-banner__form a{
-    color: #000000;
-    position: absolute;
-    right: 27rem;
-    top: 2rem;
-    font-size: 2.5rem;
-  }
-
-  .help-banner .help-banner__form i:hover{
-    color: #4C5FD5;
+  .help-banner .btn.violet i{
+    font-size: 2rem;
+    margin-right: 1rem;
   }
 
   @media screen and (max-width: 500px) {
@@ -317,15 +351,20 @@
       font-size: 5rem;
     }
 
-    .help-banner .help-banner__form .search-box{
+    .help-banner .help-banner__content .form input{
       width: 100%;
-      height: 6rem;
+      height: 5rem;
     }
 
-    .help-banner .help-banner__form a{
+    .help-banner .help-banner__content .arrow-svg{
       right: 1.5rem;
-      top: 1.7rem;
-      font-size: 2rem;
+      top: 10rem;
+      width: 3rem;
+    }
+
+    .help-banner .btn.violet{
+      margin-left: 37rem;
+      margin-top: 10rem;
     }
   }
 
@@ -472,12 +511,12 @@
   /*-------REPEATABLE PATTERNS--------*/
   .btn{
     display: inline-block;  
-    padding: 1.5rem 2rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
   }
 
   .btn.violet{
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #f5f5f5;
     background: #4C5FD5;
     border: 1px solid #4C5FD5;
@@ -490,7 +529,7 @@
   }
 
   .btn.black{
-    font-size: 2rem;
+    font-size: 2.3rem;
     color: #ffffff;
     background: #2b2b2b;
     border: 1px solid #ffffff;
@@ -505,31 +544,4 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-
-  .btn.blue{
-    position: fixed;
-    margin-top: 3rem;
-    margin-left: 120rem;
-    float: right;
-    border-radius: 5rem;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #f5f5f5;
-    background: #4C5FD5;
-    border: 1px solid #4C5FD5;
-    padding: 1rem 2rem;
-  }
-
-  .btn.blue i{
-    margin-right: 1rem;
-  }
-
-  @media screen and (max-width: 500px) {
-    .btn.blue{
-      position: fixed;
-      font-size: 1.5rem;
-      margin-left: 33rem;
-      margin-top: 10rem;
-    }
   }
