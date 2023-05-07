@@ -510,7 +510,7 @@
   .btn.blue{
     position: fixed;
     margin-top: 3rem;
-    margin-left: 115rem;
+    margin-left: 120rem;
     float: right;
     border-radius: 5rem;
     font-size: 1.8rem;
@@ -529,7 +529,7 @@
     .btn.blue{
       position: fixed;
       font-size: 1.5rem;
-      margin-left: 35rem;
+      margin-left: 33rem;
       margin-top: 10rem;
     }
   }
