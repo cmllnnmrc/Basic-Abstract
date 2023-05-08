@@ -117,7 +117,7 @@
 
   /*-------CONTAINER/GRID--------*/
   .container{
-    max-width: 120rem;
+    max-width: 140rem;
     margin: 0 auto;
     padding: 1.5rem;
   }
@@ -204,10 +204,11 @@
     }
 
     .header .header__nav ul{
+        z-index: 999;
         position: absolute;
         background: #000000;
         left: 0;
-        top: 6.5rem;
+        top: 100%;
         width: 100%;
         flex-direction: column;
         justify-content: center;
@@ -262,7 +263,6 @@
   /*-------HELP BANNER--------*/
   .help-banner{
     background: #dadbf1;
-    position: relative;
   }
 
   .help-banner .help-banner__wrapper{
@@ -303,12 +303,14 @@
   }
 
   .help-banner .help-banner__content .arrow-svg{
-    color: #000000;
+    position: fixed;
     position: absolute;
-    right: 22rem;
-    top: 15.4rem;
+    transform: translateY(-50%);
     width: 5rem;
     height: 5rem;
+    right: 25rem;
+    bottom: -1.5rem;
+    transition: all .3s;
   }
 
   .help-banner .help-banner__content .arrow-svg:hover{
@@ -317,8 +319,8 @@
 
   .help-banner .btn.violet{
     position: fixed;
-    margin-top: 5rem;
-    margin-left: 120rem;
+    right: 5rem;
+    bottom: 2rem;
     float: right;
     border-radius: 5rem;
     font-size: 1.5rem;
@@ -358,13 +360,12 @@
 
     .help-banner .help-banner__content .arrow-svg{
       right: 1.5rem;
-      top: 10rem;
+      bottom: -2.5rem;
       width: 3rem;
     }
 
     .help-banner .btn.violet{
-      margin-left: 37rem;
-      margin-top: 10rem;
+      right: 1rem;
     }
   }
 
